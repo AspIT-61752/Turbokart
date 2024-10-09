@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Turbokart.Web</title>
     <link rel="stylesheet" href="~/_content/Turbokart.SharedWebComponents/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/_content/Turbokart.SharedWebComponents/css/styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/_content/Turbokart.SharedWebComponents/css/site.css" asp-append-version="true" />
+    <!-- <link rel="stylesheet" href="~/_content/Turbokart.SharedWebComponents/Areas/SharedLayout/Pages/css/_Layout.cshtml.css" asp-append-version="true" /> -->
+    <link rel="stylesheet" href="~/_content/Turbokart.SharedWebComponents/css/Turbokart.SharedWebComponents.styles.css" asp-append-version="true" />
+    <!-- <link rel="stylesheet" href="~/_content/Turbokart.SharedWebComponents/Areas/SharedLayout/Pages/_Layout.cshtml.css" asp-append-version="true" /> -->
+    <!-- <link rel="stylesheet" href="~/_Layout.cshtml.css" asp-append-version="true" /> -->
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">
-                    <img src="#" alt="Logo" />
-                    Turbokart</a>
+                <a class="navbar-brand brand-element" asp-area="" asp-page="/Index">
+                    <img src="~/_content/Turbokart.SharedWebComponents/img/_logo.png" alt="Logo" />
+                    <h2 class="navbar-brand-text">Turbokart</h2>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -23,10 +27,12 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Hjem</a>
+                        </li><li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Booking">Booking</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Om os</a>
                         </li>
                     </ul>
                 </div>
@@ -41,7 +47,35 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - Turbokart.Web - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            <p><b>Turbokart kontaktoplysninger og åbningstider</b></p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col-wrapper">
+                        <p>Overskrift</p>
+                        <nav>
+                            <ul>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac dui</ul>
+                            <ul>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac dui</ul>
+                            <ul>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac dui</ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-col-wrapper">
+                        <p>Overskrift 2</p>
+                        <nav>
+                            <ul>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac dui</ul>
+                            <ul>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac dui</ul>
+                            <ul>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac dui</ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac dui</p>
+            </div>
+            <div>
+                &copy; 2024 - Turbokart.Web - <a asp-area="" asp-page="/Privacy">Om os</a>
+            </div>
         </div>
     </footer>
 
