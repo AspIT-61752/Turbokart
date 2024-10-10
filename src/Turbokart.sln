@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turbokart.Web", "Turbokart.Web\Turbokart.Web.csproj", "{DB9B11A2-74F2-4C7D-B7DF-BABC45ABD63F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.Web", "Turbokart.Web\Turbokart.Web.csproj", "{DB9B11A2-74F2-4C7D-B7DF-BABC45ABD63F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turbokart.SharedWebComponents", "Turbokart.SharedWebComponents\Turbokart.SharedWebComponents.csproj", "{63097962-A7B3-4993-88F6-B4337ED50B64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.SharedWebComponents", "Turbokart.SharedWebComponents\Turbokart.SharedWebComponents.csproj", "{63097962-A7B3-4993-88F6-B4337ED50B64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
