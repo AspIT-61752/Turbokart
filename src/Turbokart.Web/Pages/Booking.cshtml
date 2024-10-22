@@ -1,10 +1,16 @@
-﻿@page
+﻿@page "/booking"
 @model Turbokart.Web.Pages.BookingModel
+@using Turbokart.SharedRazorComponents
+
 @{
+    ViewData["Title"] = "Booking";
 }
 
+<BookingForm/>
 <h1>Booking</h1>
 
 <!-- Add forms for Name, email, phone number, amount of people -->
 
-@await Html.PartialAsync("~/Areas/SharedLayout/Pages/_CalendarPartial.cshtml", Model)
+<div class="booking-container">
+    @await Html.PartialAsync("~/Areas/SharedLayout/Pages/_CalendarPartial.cshtml", Model)
+</div>

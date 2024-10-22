@@ -31,3 +31,8 @@ body {
     width: 2rem;
     height: auto;
 }
+
+.booking-container {
+    max-width: 52vw;
+    font-size: small;
+}

@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.Web", "Turbokart.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.SharedWebComponents", "Turbokart.SharedWebComponents\Turbokart.SharedWebComponents.csproj", "{63097962-A7B3-4993-88F6-B4337ED50B64}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.SharedRazorComponents", "Turbokart.SharedRazorComponents\Turbokart.SharedRazorComponents.csproj", "{031606C0-8303-4A12-ADF1-38FE2BCD2535}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{63097962-A7B3-4993-88F6-B4337ED50B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63097962-A7B3-4993-88F6-B4337ED50B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63097962-A7B3-4993-88F6-B4337ED50B64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{031606C0-8303-4A12-ADF1-38FE2BCD2535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{031606C0-8303-4A12-ADF1-38FE2BCD2535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{031606C0-8303-4A12-ADF1-38FE2BCD2535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{031606C0-8303-4A12-ADF1-38FE2BCD2535}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
