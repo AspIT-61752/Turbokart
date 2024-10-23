@@ -10,7 +10,7 @@
   - [ ] Make DB with EF
 - [ ] Create a "dummy API" (only sends a Ok(200))
   - [ ] Setup API configuration (Program.cs)
-  - [ ] Controller
+  - [x] Controller
 - [ ] Create the booking API
   - [ ] REPO and DB context
   - [ ] Update Controller
