@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Turbokart.Entities\Turbokart.Entities.csproj" />
     <ProjectReference Include="..\Turbokart.SharedRazorComponents\Turbokart.SharedRazorComponents.csproj" />
     <ProjectReference Include="..\Turbokart.SharedWebComponents\Turbokart.SharedWebComponents.csproj" />
   </ItemGroup>

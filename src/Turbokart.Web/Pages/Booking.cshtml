@@ -11,6 +11,46 @@
 
 <!-- Add forms for Name, email, phone number, amount of people -->
 
+<!-- Forms -->
+
+<h4>Reservations data</h4>
+<h5>@ViewData["submit-msg"]</h5>
+
+<form method="post">
+    <!-- Full name on reservation -->
+    <div class="mb-3">
+        <label class="form-label">Fulde navn</label>
+        <input name="Name" class="form-control" type="text" aria-describedby="name-help" />
+        <div class="form-text" id="name-help">Navn på reservation</div>
+    </div>
+
+    <!-- Email on reservation -->
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input name="Email" class="form-control" type="email" aria-describedby="email-help" />
+        <div class="form-text" id="email-help">Email til reservation</div>
+    </div>
+
+    <!-- Phone number on reservation -->
+    <div class="mb-3">
+        <label class="form-label">Telefonnummer</label>
+        <input name="PhoneNumber" class="form-control" type="tel" aria-describedby="tel-help" />
+        <div class="form-text" id="tel-help">Telefonnummer på reservation</div>
+    </div>
+
+    <!-- People attending -->
+    <div class="mb-3">
+        <label class="form-label">Antal mennesker</label>
+        <input name="Attendees" class="form-control" type="number" aria-describedby="attendees-help" />
+        <div class="form-text" id="attendees-help">Antal mennesker der skal køre</div>
+    </div>
+
+    <!-- Submit data (Post) -->
+    <button class="btn btn-primary" type="button" onclick="SubmitReservation()">Book</button>
+</form>
+
+<!-- Forms end -->
+
 <div class="booking-container">
     @await Html.PartialAsync("~/Areas/SharedLayout/Pages/_CalendarPartial.cshtml", Model)
 </div>
