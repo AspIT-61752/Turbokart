@@ -51,5 +51,12 @@ namespace Turbokart.API.Controllers
 
             return BadRequest();
         }
+
+        [HttpGet]
+        [Route("GetReservations")]
+        public IEnumerable<Reservation> GetAllReservations()
+        {
+            return _db.GetAll();
+        }
     }
 }

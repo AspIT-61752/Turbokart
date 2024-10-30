@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Turbokart.DataAccess;
+
 namespace Turbokart.Web
 {
     public class Program
@@ -6,6 +9,9 @@ namespace Turbokart.Web
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddDbContext<DataContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("TurbokartConnection"))
+            );
             // Add services to the container.
             builder.Services.AddRazorPages()
                 .AddRazorPagesOptions(options =>
@@ -23,7 +29,14 @@ namespace Turbokart.Web
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            using (var scope = app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                var context = services.GetRequiredService<DataContext>();
+                context.Database.EnsureCreated();
+            }
+
+                app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();

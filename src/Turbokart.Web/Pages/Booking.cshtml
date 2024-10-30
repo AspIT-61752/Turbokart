@@ -45,8 +45,16 @@
         <div class="form-text" id="attendees-help">Antal mennesker der skal køre</div>
     </div>
 
+    <!-- Date and time of reservation -->
+    <!-- TODO: Update the submit button so it gets this data without any errors, make a check to see if there is any overlap between events -->
+    <div class="mb-3">
+        <label class="form-label">Dato</label>
+        <input name="Date" class="form-control" type="datetime-local" aria-describedby="date-help" />
+        <div class="form-text" id="date-help">Dato for reservation</div>
+    </div>
+
     <!-- Submit data (Post) -->
-    <button class="btn btn-primary" type="button" onclick="SubmitReservation()">Book</button>
+    <button class="btn btn-primary" type="submit" onclick="SubmitReservation()">Book</button>
 </form>
 
 <!-- Forms end -->
