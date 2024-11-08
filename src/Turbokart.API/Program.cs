@@ -1,6 +1,5 @@
 
 using Microsoft.EntityFrameworkCore;
-using System.Text.Json.Serialization;
 using Turbokart.DataAccess;
 
 namespace Turbokart.API
@@ -24,13 +23,13 @@ namespace Turbokart.API
             // Add services to the container.
 
             // Get connection string from appsettings.json
-            builder.Services.AddDbContext<DataContext>(options => 
+            builder.Services.AddDbContext<DataContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("TurbokartConnection"))
             .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
 
             builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
 
-            builder.Services.AddControllers().AddJsonOptions(jsn => jsn.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
+            builder.Services.AddControllers();
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

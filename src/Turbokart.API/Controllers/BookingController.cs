@@ -9,7 +9,7 @@ namespace Turbokart.API.Controllers
     [Route("[controller]")]
     public class BookingController(IReservationRepository repo) : Controller
     {
-        private readonly IReservationRepository _db = repo;
+        private readonly IReservationRepository _ReservationRepo = repo;
 
         [HttpPost]
         [Route("MakeReservation")]
@@ -38,7 +38,7 @@ namespace Turbokart.API.Controllers
                         $"Phone: {userReservation.Phone}\n" +
                         $"Attendees: {userReservation.PeopleAttending}");
 
-                    _db.Add(userReservation);
+                    _ReservationRepo.Add(userReservation);
 
                     return Ok(200);
                 }
