@@ -9,11 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.SharedWebComponen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.SharedRazorComponents", "Turbokart.SharedRazorComponents\Turbokart.SharedRazorComponents.csproj", "{031606C0-8303-4A12-ADF1-38FE2BCD2535}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turbokart.Entities", "Turbokart.Entities\Turbokart.Entities.csproj", "{62675D73-551E-4D74-8495-EE5E8268742C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.Entities", "Turbokart.Entities\Turbokart.Entities.csproj", "{62675D73-551E-4D74-8495-EE5E8268742C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turbokart.API", "Turbokart.API\Turbokart.API.csproj", "{8F47A1ED-B669-4CAA-8E69-69F720FD6EB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.API", "Turbokart.API\Turbokart.API.csproj", "{8F47A1ED-B669-4CAA-8E69-69F720FD6EB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turbokart.DataAccess", "Turbokart.DataAccess\Turbokart.DataAccess.csproj", "{8A7FEDE1-6193-4C94-AB44-E7BC8AE93B0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.DataAccess", "Turbokart.DataAccess\Turbokart.DataAccess.csproj", "{8A7FEDE1-6193-4C94-AB44-E7BC8AE93B0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
