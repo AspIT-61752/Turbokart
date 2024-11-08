@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Turbokart.DataAccess\Turbokart.DataAccess.csproj" />
+    <ProjectReference Include="..\Turbokart.Entities\Turbokart.Entities.csproj" />
+    <ProjectReference Include="..\Turbokart.SharedRazorComponents\Turbokart.SharedRazorComponents.csproj" />
+    <ProjectReference Include="..\Turbokart.SharedWebComponents\Turbokart.SharedWebComponents.csproj" />
+  </ItemGroup>
+
+</Project>

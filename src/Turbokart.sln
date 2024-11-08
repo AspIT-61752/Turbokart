@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.Web", "Turbokart.Web\Turbokart.Web.csproj", "{DB9B11A2-74F2-4C7D-B7DF-BABC45ABD63F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.SharedWebComponents", "Turbokart.SharedWebComponents\Turbokart.SharedWebComponents.csproj", "{63097962-A7B3-4993-88F6-B4337ED50B64}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.SharedRazorComponents", "Turbokart.SharedRazorComponents\Turbokart.SharedRazorComponents.csproj", "{031606C0-8303-4A12-ADF1-38FE2BCD2535}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.Entities", "Turbokart.Entities\Turbokart.Entities.csproj", "{62675D73-551E-4D74-8495-EE5E8268742C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.API", "Turbokart.API\Turbokart.API.csproj", "{8F47A1ED-B669-4CAA-8E69-69F720FD6EB7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.DataAccess", "Turbokart.DataAccess\Turbokart.DataAccess.csproj", "{8A7FEDE1-6193-4C94-AB44-E7BC8AE93B0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB9B11A2-74F2-4C7D-B7DF-BABC45ABD63F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB9B11A2-74F2-4C7D-B7DF-BABC45ABD63F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB9B11A2-74F2-4C7D-B7DF-BABC45ABD63F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB9B11A2-74F2-4C7D-B7DF-BABC45ABD63F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63097962-A7B3-4993-88F6-B4337ED50B64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63097962-A7B3-4993-88F6-B4337ED50B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63097962-A7B3-4993-88F6-B4337ED50B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63097962-A7B3-4993-88F6-B4337ED50B64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{031606C0-8303-4A12-ADF1-38FE2BCD2535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{031606C0-8303-4A12-ADF1-38FE2BCD2535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{031606C0-8303-4A12-ADF1-38FE2BCD2535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{031606C0-8303-4A12-ADF1-38FE2BCD2535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62675D73-551E-4D74-8495-EE5E8268742C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62675D73-551E-4D74-8495-EE5E8268742C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62675D73-551E-4D74-8495-EE5E8268742C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62675D73-551E-4D74-8495-EE5E8268742C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F47A1ED-B669-4CAA-8E69-69F720FD6EB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F47A1ED-B669-4CAA-8E69-69F720FD6EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F47A1ED-B669-4CAA-8E69-69F720FD6EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F47A1ED-B669-4CAA-8E69-69F720FD6EB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A7FEDE1-6193-4C94-AB44-E7BC8AE93B0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A7FEDE1-6193-4C94-AB44-E7BC8AE93B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A7FEDE1-6193-4C94-AB44-E7BC8AE93B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A7FEDE1-6193-4C94-AB44-E7BC8AE93B0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FAE9640-B8E7-44FF-8372-F58D0A098324}
+	EndGlobalSection
+EndGlobal
