@@ -5,9 +5,13 @@ VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Razor Bakery", "Razor Bakery\Razor Bakery.csproj", "{CDD24CC6-9410-4F12-ABFE-ECACF09DBEEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor Bakery.Entities", "Razor Bakery.entities\Razor Bakery.Entities.csproj", "{0527E9DA-3B14-49FE-9717-8D8EA1FB3B3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Razor Bakery.Entities", "Razor Bakery.entities\Razor Bakery.Entities.csproj", "{0527E9DA-3B14-49FE-9717-8D8EA1FB3B3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor Bakery.DataAccess", "Razor Bakery.DataAccess\Razor Bakery.DataAccess.csproj", "{99B05996-3AD7-4676-8DEE-0863A7B71718}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Razor Bakery.DataAccess", "Razor Bakery.DataAccess\Razor Bakery.DataAccess.csproj", "{99B05996-3AD7-4676-8DEE-0863A7B71718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorChatApp", "BlazorChatApp\BlazorChatApp\BlazorChatApp.csproj", "{BBE395D6-61CC-48B7-BBB8-16CE35147439}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorChatApp.Client", "BlazorChatApp\BlazorChatApp.Client\BlazorChatApp.Client.csproj", "{D97E7A4C-F43F-40E7-B862-C0D81278E15A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{99B05996-3AD7-4676-8DEE-0863A7B71718}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99B05996-3AD7-4676-8DEE-0863A7B71718}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99B05996-3AD7-4676-8DEE-0863A7B71718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBE395D6-61CC-48B7-BBB8-16CE35147439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE395D6-61CC-48B7-BBB8-16CE35147439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE395D6-61CC-48B7-BBB8-16CE35147439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE395D6-61CC-48B7-BBB8-16CE35147439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D97E7A4C-F43F-40E7-B862-C0D81278E15A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D97E7A4C-F43F-40E7-B862-C0D81278E15A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D97E7A4C-F43F-40E7-B862-C0D81278E15A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D97E7A4C-F43F-40E7-B862-C0D81278E15A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
