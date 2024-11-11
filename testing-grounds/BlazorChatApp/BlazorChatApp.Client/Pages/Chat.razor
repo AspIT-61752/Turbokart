@@ -49,6 +49,7 @@ else
     private List<string> messages = new();
     private string userInput;
     private string messageInput;
+    public bool IsConnected => hubConnection?.State == HubConnectionState.Connected;
 
     protected override async Task OnInitializedAsync()
     {
@@ -56,18 +57,34 @@ else
         .WithUrl(NavigationManager.ToAbsoluteUri("/chatHub"))
         .Build();
 
-        hubConnection.On<string, string>("RecieveMessage", (user, message) =>
+        hubConnection.On<string, string>("ReceiveMessage", async (user, message) =>
         {
             var encodedMessage = $"{user}: {message}";
             messages.Add(encodedMessage);
-            StateHasChanged();
+            await InvokeAsync(StateHasChanged); // The 'await' operator can only be used within an async lambda expression.
         });
 
+        hubConnection.Closed += async (error) =>
+        {
+            await Task.Delay(5000);
+            await hubConnection.StartAsync();
+            await InvokeAsync(StateHasChanged);
+        };
+
         await hubConnection.StartAsync();
+        await InvokeAsync(StateHasChanged);
     }
 
-    Task Send() => hubConnection.SendAsync("SendMessage", userInput, messageInput);
+    private async Task Send()
+    {
+        if(hubConnection != null)
+        {
+            await hubConnection.SendAsync("SendMessage", userInput, messageInput);
+            messageInput = string.Empty;
+            await InvokeAsync(StateHasChanged);
+        }
+    }
 
-    public bool IsConnected => hubConnection.State == HubConnectionState.Connected;
+    
 
 }
